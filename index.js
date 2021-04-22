@@ -1,11 +1,12 @@
-  
 'use strict';
 
 const friendsModel = require('./schema.js');
 
+const uuid = require('uuid').v4
 
 exports.handler = async (event) => {
-  console.log('EVENT', event)
+  console.log(event)
+  
   try {
 
     const id = event.queryStringParameters.id
